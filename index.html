@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <meta name="author" content="Karolina Miazga">
+
+    <meta name="keywords" content="">
+    <title>AleArtist</title>
+
+    <meta name="description" content="">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <img src="Nagłówek.png" alt="" class="img-fluid">
+        </div>
+
+    </header>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="navbar-nav mr-auto justify-content-around text-uppercase">
+                    <a href="#" class="nav-link nav-item">O mnie</a>
+                    <a href="#" class="nav-link nav-item">Digital</a>
+                    <a href="#" class="nav-link nav-item">Rysunek tradycyjny</a>
+                    <a href="#" class="nav-link nav-item">Inne</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="about-me">
+        <div class="container">
+            <div class="row align-items-center portret">
+                <div class="col-md-6 align-items-center">
+                    <img src="portret.png" alt="" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="col-md-6 ">
+                    <h1>O mnie</h1>
+                    <p class="text-justify lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, natus rerum? Natus at ratione rem sed laudantium
+                        molestiae aliquam, eum dolorum, ab amet voluptatem delectus nihil assumenda ullam. Nesciunt, asperiores.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, dolores. Saepe quo blanditiis in rem
+                        aspernatur, explicabo sapiente quia impedit! Sunt unde veritatis pariatur quis? Quisquam ea tempore
+                        laborum obcaecati.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="container-fluid">
+            <div class="photos">
+                <div class="photo photo1">
+
+                </div>
+                <div class="photo photo2">
+
+                </div>
+                <div class="photo photo3">
+
+                </div>
+                <div class="photo photo4">
+
+                </div>
+                <div class="photo photo5">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-in container-fluid d-inline-flex align-items-center justify-content-center text-uppercase">
+            &copy; 2019 - AleArtist &nbsp;&nbsp; designed by Karolina Miazga
+        </div>
+    </div>
+
+
+    <script>
+        const photos = document.querySelectorAll('.photo');
+
+        function toggleOpen() {
+            this.classList.toggle('open');
+        }
+
+        // function toggleActive(e) {
+        //     if (e.propertyName.includes('flex')) {
+        //         this.classList.toggle('open-active');
+        //     }
+        // }
+
+        photos.forEach(photo => photo.addEventListener('click', toggleOpen));
+        // photos.forEach(photo => photo.addEventListener('transitioned', toggleActive));
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
